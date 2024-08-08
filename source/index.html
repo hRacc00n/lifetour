@@ -10,12 +10,22 @@
 
   <body class="page-body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
+    <header class="header" data-test="header">
+      <div class="header__container">
+        <button class="header__button toggle-burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="toggle-burger__line1"></span>
+          <span class="toggle-burger__line2"></span>
+          <span class="toggle-burger__line3"></span>
+        </button>
+      </div>
+    </header>
+
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
