@@ -1,0 +1,61 @@
+.header {
+  background-color: $additional;
+}
+
+.header__container {
+  display: grid;
+  width: 320px;
+  padding: 15px 15px 13px;
+  grid-template-columns: 117px 1fr;
+  gap: 0 31px;
+}
+
+.header__button {
+  width: 27px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.header__logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.header__logo svg {
+  display: block;
+}
+
+.header__phone {
+  grid-column: 2 / 3;
+  justify-self: end;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: $white;
+  text-decoration: none;
+}
+
+.header__navigation {
+  &--close {
+    display: none;
+  }
+}
+
+.header__list {
+  @include list-resseting;
+
+  display: flex;
+  padding: 25px 0 34px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header__link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+}
