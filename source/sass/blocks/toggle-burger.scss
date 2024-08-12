@@ -1,3 +1,17 @@
+@keyframes hovering {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .toggle-burger {
   position: relative;
   background-color: transparent;
@@ -35,6 +49,14 @@
   background-color: $white;
   translate: 0 20%;
   transition: all 0.3s;
+}
+
+.toggle-burger:hover .toggle-burger__line1,
+.toggle-burger:hover .toggle-burger__line2,
+.toggle-burger:hover .toggle-burger__line3 {
+  animation-name: hovering;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .toggle-burger--open .toggle-burger__line1 {
