@@ -1,0 +1,77 @@
+@keyframes hovering {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.toggle-burger {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-burger__line1 {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $white;
+  translate: 0 -20%;
+  transition: all 0.3s;
+}
+
+.toggle-burger__line2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 17px;
+  height: 2px;
+  background-color: $white;
+  translate: 0 -50%;
+  transition: all 0.3s;
+}
+
+.toggle-burger__line3 {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $white;
+  translate: 0 20%;
+  transition: all 0.3s;
+}
+
+.toggle-burger:hover .toggle-burger__line1,
+.toggle-burger:hover .toggle-burger__line2,
+.toggle-burger:hover .toggle-burger__line3 {
+  animation-name: hovering;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.toggle-burger--open .toggle-burger__line1 {
+  top: 13px;
+  rotate: 45deg;
+  transition: all 0.5s;
+}
+
+.toggle-burger--open .toggle-burger__line2 {
+  width: 0;
+  transition: all 0.5s;
+}
+
+.toggle-burger--open .toggle-burger__line3 {
+  top: 12px;
+  rotate: -45deg;
+  transition: all 0.5s;
+}
