@@ -3,22 +3,54 @@
 }
 
 .header__container {
+  position: relative;
   display: grid;
-  width: 320px;
+  min-width: 320px;
   padding: 15px 15px 13px;
   grid-template-columns: 117px 1fr;
   gap: 0 31px;
+
+  @media ($tablet) {
+    padding: 20px 45px;
+    grid-template-columns: 226px 142px 226px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media ($desktop) {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 42px 120px 40px;
+    grid-template-columns: 205px auto 157px;
+  }
 }
 
 .header__button {
   width: 27px;
   height: 26px;
   cursor: pointer;
+
+  @media ($tablet) {
+    align-self: center;
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
 }
 
 .header__logo {
   display: block;
   margin-bottom: 16px;
+  justify-self: end;
+
+  @media ($tablet) {
+    margin-bottom: 0;
+  }
+
+  @media ($desktop) {
+    justify-self: center;
+  }
 }
 
 .header__logo svg {
@@ -33,11 +65,40 @@
   line-height: 1;
   color: $white;
   text-decoration: none;
+
+  @media ($tablet) {
+    position: relative;
+    top: 2px;
+    grid-column: auto;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  @media ($desktop) {
+    order: 1;
+    font-size: 18px;
+  }
 }
 
 .header__navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background-color: $additional;
+
   &--close {
     display: none;
+  }
+
+  @media ($desktop) {
+    position: relative;
+    top: 0;
+    width: 582px;
+    display: block;
+    padding: 12px 0;
+    background-color: transparent;
+    justify-self: center;
   }
 }
 
@@ -45,9 +106,22 @@
   @include list-resseting;
 
   display: flex;
-  padding: 25px 0 34px;
+  padding: 12px 15px 47px;
   flex-direction: column;
   gap: 16px;
+
+  @media ($tablet) {
+    padding: 29px 45px 67px;
+    gap: 22px;
+  }
+
+  @media ($desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+    align-content: center;
+  }
 }
 
 .header__link {
@@ -58,4 +132,15 @@
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
+
+  @media ($tablet) {
+    font-size: 16px;
+  }
+
+  @media ($desktop) {
+    padding: 3px 5px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+  }
 }
