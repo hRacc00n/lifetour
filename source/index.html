@@ -70,54 +70,67 @@
       <h1 class="visually-hidden">Захватывающие путешествия с LifeTour</h1>
 
       <section class="hero" data-test="hero">
-        <div class="hero__container">
+        <div class="hero__container hero__swiper swiper">
           <h2 class="visually-hidden">Популярные предложения</h2>
 
-          <ul class="hero__list">
-            <li class="hero__item">
-              <h3>Захватывающие вершины Кавказа</h3>
-              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-              <a class="hero__button button" href="#">Смотреть тур</a>
-              <ul class="hero__specifications">
-                <li class="hero__days">6 дней/5 ночей</li>
-                <li class="hero__level">Высокая сложность</li>
-              </ul>
+          <ul class="hero__list swiper-wrapper">
+
+            <li class="hero__item hero__item--caucasus swiper-slide">
+              <div class="hero__wrapper">
+                <h3>Захватывающие вершины Кавказа</h3>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                <a class="hero__button button" href="#">Смотреть тур</a>
+                <ul class="hero__specifications">
+                  <li class="hero__days">6 дней/5 ночей</li>
+                  <li class="hero__level">Высокая сложность</li>
+                </ul>
+              </div>
             </li>
 
-            <li class="hero__item">
-              <h3>Невероятная природа Камчатки</h3>
-              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-              <a class="hero__button button" href="#">Смотреть тур</a>
-              <ul class="hero__photos">
-                <li class="photo">
-                  <picture>
-                    <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/lake-desktop@1x.png 1x, img/hero/lake-desktop@2x.png 2x" width="308" height="407">
-                    <img src="img/hero/lake-tablet@1x.png" srcset="img/hero/lake-tablet@2x.png" width="266" height="351" alt="Горное озеро">
-                  </picture>
-                </li>
-                <li class="photo">
-                  <picture>
-                    <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/walking-desktop@1x.png 1x, img/hero/walking-desktop@2x.png 2x" width="277" height="366">
-                    <img src="img/hero/walking-tablet@1x.png" srcset="img/hero/walking-tablet@2x.png" width="236" height="312" alt="Пешая прогулка по дикой природе Камчатки">
-                  </picture>
-                </li>
-              </ul>
-              <ul class="hero__specifications">
-                <li class="hero__days">9 дней/10 ночей</li>
-                <li class="hero__level">Средняя сложность</li>
-              </ul>
+            <li class="hero__item hero__item--kamchatka swiper-slide">
+              <div class="hero__wrapper">
+                <h3>Невероятная природа Камчатки</h3>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                <a class="hero__button button" href="#">Смотреть тур</a>
+                <ul class="hero__photos">
+                  <li class="photo">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/lake-desktop@1x.png 1x, img/hero/lake-desktop@2x.png 2x" width="308" height="407">
+                      <img src="img/hero/lake-tablet@1x.png" srcset="img/hero/lake-tablet@2x.png" width="266" height="351" alt="Горное озеро">
+                    </picture>
+                  </li>
+                  <li class="photo">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/walking-desktop@1x.png 1x, img/hero/walking-desktop@2x.png 2x" width="277" height="366">
+                      <img src="img/hero/walking-tablet@1x.png" srcset="img/hero/walking-tablet@2x.png" width="236" height="312" alt="Пешая прогулка по дикой природе Камчатки">
+                    </picture>
+                  </li>
+                </ul>
+                <ul class="hero__specifications">
+                  <li class="hero__days">9 дней/10 ночей</li>
+                  <li class="hero__level">Средняя сложность</li>
+                </ul>
+              </div>
             </li>
 
-            <li class="hero__item">
-              <h3>Магические пейзажи Алтайского Края</h3>
-              <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-              <a class="hero__button button" href="#">Смотреть тур</a>
-              <ul class="hero__specifications">
-                <li class="hero__days">8 дней/7 ночей</li>
-                <li class="hero__level">Лёгкая сложность</li>
-              </ul>
+            <li class="hero__item hero__item--altai swiper-slide">
+              <div class="hero__wrapper">
+                <h3>Магические пейзажи Алтайского Края</h3>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                <a class="hero__button button" href="#">Смотреть тур</a>
+                <ul class="hero__specifications">
+                  <li class="hero__days">8 дней/7 ночей</li>
+                  <li class="hero__level">Лёгкая сложность</li>
+                </ul>
+              </div>
             </li>
           </ul>
+
+          <div class="hero__paginations swiper-pagination">
+            <span class="hero__pagination swiper-pagination-bullet"></span>
+            <span class="hero__pagination swiper-pagination-bullet"></span>
+            <span class="hero__pagination swiper-pagination-bullet"></span>
+          </div>
         </div>
       </section>
 

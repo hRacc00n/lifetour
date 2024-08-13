@@ -86,6 +86,7 @@
   left: 0;
   width: 100vw;
   background-color: $additional;
+  z-index: 3;
 
   &--close {
     display: none;

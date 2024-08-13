@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  font-family: $basic-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  background-color: $button;
+}

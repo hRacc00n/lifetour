@@ -1,3 +1,7 @@
+/* шрифт */
+
+$basic-font: "Montserrat", "Arial", sans-serif;
+
 /* цвета */
 
 $primary: #2d383f;
@@ -14,6 +18,7 @@ $additional20: rgba(2, 102, 193, 0.2);
 $additional10: rgba(2, 102, 193, 0.1);
 $overlay50: rgba(0, 0, 0, 0.5);
 $dark: #030a1a;
+$button: #0266c1;
 
 /* дисплей */
 $tablet: "min-width: 768px";
