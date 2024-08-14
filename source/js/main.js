@@ -3,7 +3,9 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-import { onBurgerSwitchDisplay } from './on-burger-swithc-display';
+import { onBurgerSwitchDisplay } from './on-burger-switch-display';
 import { burgerButton } from './variables';
+import { swiperHero } from './swipers';
 
 burgerButton.addEventListener('click', onBurgerSwitchDisplay);
+swiperHero.update();

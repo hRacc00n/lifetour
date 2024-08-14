@@ -1,0 +1,377 @@
+.hero__container {
+  width: 100%;
+  min-height: 568px;
+  background-color: #3abbee;
+
+  @media ($tablet) {
+    min-height: 1034px;
+  }
+
+  @media ($desktop) {
+    min-height: 800px;
+  }
+}
+
+.hero__list {
+  @include list-resseting;
+}
+
+.hero__item {
+  &--caucasus {
+    background:
+      image-set(
+        url("../../img/hero/caucasus-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/hero/caucasus-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/hero/caucasus-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/hero/caucasus-mobile@2x.jpg") type("image/jpeg") 2x
+      ),
+      #3241c7;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--kamchatka {
+    background:
+      image-set(
+        url("../../img/hero/kamchatka-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/hero/kamchatka-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/hero/kamchatka-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/hero/kamchatka-mobile@2x.jpg") type("image/jpeg") 2x
+      ),
+      #3241c7;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--altai {
+    background:
+      image-set(
+        url("../../img/hero/altai-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/hero/altai-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/hero/altai-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/hero/altai-mobile@2x.jpg") type("image/jpeg") 2x
+      ),
+      #3241c7;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media ($tablet) {
+    &--caucasus {
+      background:
+        image-set(
+          url("../../img/hero/caucasus-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/caucasus-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/caucasus-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/caucasus-tablet@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--kamchatka {
+      background:
+        image-set(
+          url("../../img/hero/kamchatka-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/kamchatka-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/kamchatka-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/kamchatka-tablet@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--altai {
+      background:
+        image-set(
+          url("../../img/hero/altai-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/altai-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/altai-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/altai-tablet@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media ($desktop) {
+    &--caucasus {
+      background:
+        image-set(
+          url("../../img/hero/caucasus-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/caucasus-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/caucasus-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/caucasus-desktop@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--kamchatka {
+      background:
+        image-set(
+          url("../../img/hero/kamchatka-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/kamchatka-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/kamchatka-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/kamchatka-desktop@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--altai {
+      background:
+        image-set(
+          url("../../img/hero/altai-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/altai-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/altai-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/altai-desktop@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.hero__wrapper {
+  width: 320px;
+  min-height: 568px;
+  margin: 0 auto;
+  padding: 144px 15px 60px;
+
+  @media ($tablet) {
+    width: 768px;
+    min-height: 1034px;
+    padding: 342px 45px 10px;
+
+    &--photos {
+      padding-top: 137px;
+    }
+  }
+
+  @media ($desktop) {
+    display: flex;
+    width: 1440px;
+    min-height: 800px;
+    padding: 199px 540px 80px 120px;
+    flex-direction: column;
+
+    &--photos {
+      padding-right: 514px;
+    }
+
+    &--altai {
+      padding-right: 376px;
+    }
+  }
+}
+
+.hero__wrapper h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+
+  @media ($tablet) {
+    margin-bottom: 13px;
+    font-size: 56px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 25px;
+    font-size: 77px;
+    text-align: left;
+  }
+}
+
+.hero__wrapper p {
+  margin: 0;
+  margin-bottom: 62px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.33;
+  text-align: center;
+  color: $white;
+
+  @media ($tablet) {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  @media ($desktop) {
+    width: 420px;
+    margin: 0;
+    margin-bottom: 37px;
+    font-size: 17px;
+    text-align: left;
+  }
+}
+
+.hero__wrapper--photos p,
+.hero__wrapper--altai p {
+  @media ($desktop) {
+    width: 464px;
+  }
+}
+
+.hero__button {
+  width: 180px;
+  padding: 20px 20px 18px;
+
+  @media ($tablet) {
+    margin-bottom: 46px;
+  }
+
+  @media ($desktop) {
+    margin: 0;
+    margin-bottom: auto;
+  }
+}
+
+.hero__photos {
+  display: none;
+
+  @media ($tablet) {
+    position: relative;
+    display: block;
+    width: 442px;
+    height: 365px;
+    margin: 0 auto;
+  }
+
+  @media ($desktop) {
+    position: absolute;
+    top: 187px;
+    right: 120px;
+    width: 410px;
+    height: 459px;
+  }
+}
+
+.hero__photo {
+  @media ($tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:nth-child(2) {
+      top: auto;
+      right: 0;
+      bottom: -5px;
+      left: auto;
+    }
+  }
+}
+
+.hero__photo:first-child img {
+  @media ($tablet) {
+    max-width: 266px;
+    height: 351px;
+  }
+
+  @media ($desktop) {
+    max-width: 308px;
+    height: 407px;
+  }
+}
+
+.hero__photo:nth-child(2) img {
+  @media ($tablet) {
+    max-width: 236px;
+    height: 312px;
+  }
+
+  @media ($desktop) {
+    max-width: 277px;
+    height: 366px;
+  }
+}
+
+.hero__specifications {
+  @include list-resseting;
+
+  display: none;
+
+  @media ($desktop) {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.hero__specification {
+  position: relative;
+  padding: 12px 19px 14px 39px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: $white;
+  border: 1px solid $white50;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 19px;
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+  }
+}
+
+.hero__specification--days {
+  &::before {
+    mask-image: url("/__spritemap#sprite-moon-view");
+  }
+}
+
+.hero__specification--level {
+  &::before {
+    mask-image: url("/__spritemap#sprite-level-view");
+  }
+}
+
+.hero__paginations.swiper-pagination.swiper-pagination-bullets {
+  display: flex;
+  bottom: 40px;
+  left: 50%;
+  width: auto;
+  translate: -50% 0;
+  gap: 12px;
+
+  @media ($desktop) {
+    right: 116px;
+    bottom: 92px;
+    left: auto;
+    translate: 0 0;
+  }
+}
+
+.hero__paginations .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid $white;
+  background-color: transparent;
+  opacity: 1;
+
+  @media ($tablet) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.hero__paginations .swiper-pagination-bullet-active {
+  background-color: $white;
+}
