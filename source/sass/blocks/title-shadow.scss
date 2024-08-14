@@ -1,0 +1,13 @@
+.title-shadow {
+  &::before {
+    content: attr(data-name) / "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    color: $primary;
+    opacity: 0.03;
+  }
+}

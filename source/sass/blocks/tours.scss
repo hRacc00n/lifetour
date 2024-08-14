@@ -1,0 +1,35 @@
+.tours__container {
+  padding: 36px 15px 20px;
+}
+
+.tours__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: $primary;
+}
+
+.tours__navigation {
+  display: none;
+}
+
+.tuors__list {
+  @include list-resseting;
+}
+
+.tours__card {
+  min-height: 290px;
+  padding: 224px 20px 30px;
+  background-color: #496647;
+}
+
+.tours__info-list {
+  @include list-resseting;
+}
+
+.tours__info-programs {
+  @include list-resseting;
+}

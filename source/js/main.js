@@ -9,3 +9,9 @@ import { swiperHero } from './swipers';
 
 burgerButton.addEventListener('click', onBurgerSwitchDisplay);
 swiperHero.update();
+
+const titlesShadow = document.querySelectorAll('.title-shadow');
+
+titlesShadow.forEach((element) => {
+  element.dataset.name = element.textContent;
+});
