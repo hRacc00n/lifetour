@@ -41,6 +41,14 @@ window.addEventListener('resize', () => {
   }
 });
 
+navigationList.addEventListener('click', (evt) => {
+  if (evt.target.nodeName === 'A') {
+    burgerButton.classList.toggle('toggle-burger--open');
+    navigationList.classList.toggle('header__navigation--close');
+    closeList();
+  }
+});
+
 const onBurgerSwitchDisplay = () => {
   burgerButton.classList.toggle('toggle-burger--open');
   navigationList.classList.toggle('header__navigation--close');

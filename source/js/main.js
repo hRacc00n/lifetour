@@ -23,6 +23,10 @@ const swiper = new Swiper('.hero__swiper', {
   breakpoints: {
     320: {
       loop: true,
+      simulateTouch: true,
     },
+    1440: {
+      simulateTouch: false,
+    }
   }
 });
