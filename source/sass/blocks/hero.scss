@@ -1,6 +1,10 @@
 .hero__container {
   width: 100%;
   min-height: 568px;
+
+  @media ($tablet) {
+    min-height: 1034px;
+  }
 }
 
 .hero__list {
@@ -8,9 +12,6 @@
 }
 
 .hero__item {
-  // background-color: #3241c7;
-
-
   &--caucasus {
     background:
       image-set(
@@ -49,6 +50,41 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media ($tablet) {
+    &--caucasus {
+      background:
+        image-set(
+          url("../../img/hero/caucasus-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/caucasus-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/caucasus-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/caucasus-tablet@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+    }
+
+    &--kamchatka {
+      background:
+        image-set(
+          url("../../img/hero/kamchatka-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/kamchatka-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/kamchatka-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/kamchatka-tablet@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+    }
+
+    &--altai {
+      background:
+        image-set(
+          url("../../img/hero/altai-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/hero/altai-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/hero/altai-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/hero/altai-tablet@2x.jpg") type("image/jpeg") 2x
+        ),
+        #3241c7;
+    }
+  }
 }
 
 .hero__wrapper {
@@ -56,6 +92,16 @@
   min-height: 568px;
   margin: 0 auto;
   padding: 144px 15px 60px;
+
+  @media ($tablet) {
+    width: 768px;
+    min-height: 1034px;
+    padding: 342px 45px 10px;
+
+    &--photos {
+      padding-top: 137px;
+    }
+  }
 }
 
 .hero__wrapper h3 {
@@ -66,6 +112,11 @@
   line-height: 1;
   text-align: center;
   color: $white;
+
+  @media ($tablet) {
+    margin-bottom: 13px;
+    font-size: 56px;
+  }
 }
 
 .hero__wrapper p {
@@ -76,15 +127,64 @@
   line-height: 1.33;
   text-align: center;
   color: $white;
+
+  @media ($tablet) {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 
 .hero__button {
   width: 180px;
   padding: 20px 20px 18px;
+
+  @media ($tablet) {
+    margin-bottom: 46px;
+  }
 }
 
 .hero__photos {
   display: none;
+
+  @media ($tablet) {
+    position: relative;
+    display: block;
+    width: 442px;
+    height: 365px;
+    margin: 0 auto;
+  }
+}
+
+.hero__photo {
+  @media ($tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:nth-child(2) {
+      top: auto;
+      right: 0;
+      bottom: -5px;
+      left: auto;
+    }
+  }
+}
+
+.hero__photo:first-child img {
+  @media ($tablet) {
+    max-width: 266px;
+    height: 351px;
+  }
+}
+
+.hero__photo:nth-child(2) img {
+  @media ($tablet) {
+    max-width: 236px;
+    height: 312px;
+  }
 }
 
 .hero__specifications {
@@ -95,7 +195,8 @@
   display: flex;
   bottom: 40px;
   left: 50%;
-  translate: -15% 0;
+  width: auto;
+  translate: -50% 0;
   gap: 12px;
 }
 
@@ -106,6 +207,11 @@
   border: 1px solid $white;
   background-color: transparent;
   opacity: 1;
+
+  @media ($tablet) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .hero__paginations .swiper-pagination-bullet-active {
