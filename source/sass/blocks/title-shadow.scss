@@ -1,0 +1,25 @@
+.title-shadow {
+  &::before {
+    content: attr(data-name) / "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    color: $primary;
+    opacity: 0.03;
+  }
+
+  @media ($tablet) {
+    &::before {
+      font-size: 40px;
+    }
+  }
+
+  @media ($desktop) {
+    &::before {
+      font-size: 55px;
+    }
+  }
+}
