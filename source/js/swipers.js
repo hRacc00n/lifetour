@@ -35,6 +35,10 @@ const swiperTours = new Swiper('.tours__swiper', {
       slidesPerView: 2,
       spaceBetween: 18,
     },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
   }
 });
 

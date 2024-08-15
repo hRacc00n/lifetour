@@ -20,14 +20,34 @@
     background-repeat: no-repeat;
     background-position: bottom -900px right;
   }
+
+  @media ($desktop) {
+    background-image:
+      image-set(
+        url("../../img/tours/clouds1-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/clouds1-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/clouds1-desktop@1x.png") type("image/png") 1x,
+        url("../../img/tours/clouds1-desktop@2x.png") type("image/png") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: bottom -690px right;
+  }
 }
 
 .tours__container {
+  width: 320px;
+  margin: 0 auto;
   padding: 38px 15px 20px;
 
   @media ($tablet) {
     position: relative;
+    width: 768px;
     padding: 60px 45px 40px;
+  }
+
+  @media ($desktop) {
+    width: 1440px;
+    padding: 123px 120px 100px;
   }
 }
 
@@ -46,6 +66,12 @@
     padding-right: 130px;
     font-size: 25px;
   }
+
+  @media ($desktop) {
+    padding-right: 160px;
+    margin-bottom: 50px;
+    font-size: 35px;
+  }
 }
 
 .tours__navigation {
@@ -57,6 +83,11 @@
     right: 45px;
     display: flex;
     gap: 4px;
+  }
+
+  @media ($desktop) {
+    top: 120px;
+    right: 120px;
   }
 }
 
@@ -155,9 +186,14 @@
   @media ($tablet) {
     width: 678px;
   }
+
+  @media ($desktop) {
+    width: 1200px;
+    margin-bottom: 53px;
+  }
 }
 
-.tuors__list {
+.tours__list {
   @include list-resseting;
 }
 
@@ -241,6 +277,54 @@
           url("../../img/tours/belukha-tablet@2x.jpg") type("image/jpeg") 2x
         );
       background-repeat: no-repeat;
+    }
+  }
+
+  @media ($desktop) {
+    &--elbrus {
+      background-image:
+        image-set(
+          url("../../img/tours/elbrus-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/tours/elbrus-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/tours/elbrus-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/tours/elbrus-desktop@2x.jpg") type("image/jpeg") 2x
+        );
+      background-repeat: no-repeat;
+    }
+
+    &--belukha {
+      background-image:
+        image-set(
+          url("../../img/tours/belukha-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/tours/belukha-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/tours/belukha-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/tours/belukha-desktop@2x.jpg") type("image/jpeg") 2x
+        );
+      background-repeat: no-repeat;
+    }
+
+    &--fisht {
+      background-image:
+        image-set(
+          url("../../img/tours/fisht-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/tours/fisht-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/tours/fisht-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/tours/fisht-desktop@2x.jpg") type("image/jpeg") 2x
+        );
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--managara {
+      background-image:
+        image-set(
+          url("../../img/tours/managara-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/tours/managara-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/tours/managara-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/tours/managara-desktop@2x.jpg") type("image/jpeg") 2x
+        );
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -364,6 +448,10 @@
   @media ($tablet) {
     gap: 5px 28px;
   }
+
+  @media ($desktop) {
+    gap: 5px 53px;
+  }
 }
 
 .tours__program-name {
@@ -386,6 +474,13 @@
   color: $white;
   grid-row: 2 / 3;
   align-self: center;
+
+  &--level-3 {
+    width: 84px;
+    height: 16px;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-stars3-view");
+  }
 
   &--level-4 {
     width: 84px;

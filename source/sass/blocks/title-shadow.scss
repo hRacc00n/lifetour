@@ -16,4 +16,10 @@
       font-size: 40px;
     }
   }
+
+  @media ($desktop) {
+    &::before {
+      font-size: 55px;
+    }
+  }
 }
