@@ -524,6 +524,45 @@
     translate: 0 -50%;
   }
 
+  &:hover {
+    color: $additional20;
+
+    &::before {
+      border-bottom-color: $additional20;
+      border-right-color: $additional20;
+    }
+  }
+
+  &:focus-visible {
+    color: $additional;
+    outline: none;
+
+    &::before {
+      border-bottom-color: $additional;
+      border-right-color: $additional;
+    }
+  }
+
+  &:active {
+    color: $active;
+    outline: none;
+
+    &::before {
+      border-bottom-color: $active;
+      border-right-color: $active;
+    }
+  }
+
+  &:disabled {
+    color: $disabled;
+    outline: none;
+
+    &::before {
+      border-bottom-color: $disabled;
+      border-right-color: $disabled;
+    }
+  }
+
   @media ($tablet) {
     width: 238px;
     padding-top: 11px;
