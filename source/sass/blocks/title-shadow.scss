@@ -1,4 +1,6 @@
 .title-shadow {
+  position: relative;
+
   &::before {
     content: attr(data-name) / "";
     position: absolute;

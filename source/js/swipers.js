@@ -30,6 +30,7 @@ const swiperTours = new Swiper('.tours__swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      simulateTouch: true,
     },
     768: {
       slidesPerView: 2,
@@ -38,6 +39,7 @@ const swiperTours = new Swiper('.tours__swiper', {
     1440: {
       slidesPerView: 3,
       spaceBetween: 30,
+      simulateTouch: false,
     }
   }
 });
