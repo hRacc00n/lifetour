@@ -10,4 +10,10 @@
     color: $primary;
     opacity: 0.03;
   }
+
+  @media ($tablet) {
+    &::before {
+      font-size: 40px;
+    }
+  }
 }
