@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -21,4 +21,8 @@ const swiperHero = new Swiper('.hero__swiper', {
   }
 });
 
-export { swiperHero };
+const swiperTours = new Swiper('.tours__swiper', {
+  modules: [Navigation],
+});
+
+export { swiperHero, swiperTours };

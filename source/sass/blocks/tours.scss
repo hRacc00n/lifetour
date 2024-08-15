@@ -37,9 +37,15 @@
   @include list-resseting;
 }
 
+.tours__card.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .tours__card {
-  min-height: 290px;
-  padding: 224px 20px 16px;
+  min-height: 416px;
+  padding: 30px 20px;
   background-color: #496647;
 
   &--elbrus {
@@ -50,18 +56,83 @@
         url("../../img/tours/elbrus-mobile@1x.jpg") type("image/jpeg") 1x,
         url("../../img/tours/elbrus-mobile@2x.jpg") type("image/jpeg") 2x
       );
+    background-repeat: no-repeat;
+  }
+
+  &--belukha {
+    background-image:
+      image-set(
+        url("../../img/tours/belukha-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/belukha-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/belukha-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/tours/belukha-mobile@2x.jpg") type("image/jpeg") 2x
+      );
+    background-repeat: no-repeat;
+  }
+
+  &--fisht {
+    background-image:
+      image-set(
+        url("../../img/tours/fisht-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/fisht-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/fisht-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/tours/fisht-mobile@2x.jpg") type("image/jpeg") 2x
+      );
+    background-repeat: no-repeat;
+  }
+
+  &--managara {
+    background-image:
+      image-set(
+        url("../../img/tours/managara-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/managara-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/managara-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/tours/managara-mobile@2x.jpg") type("image/jpeg") 2x
+      );
+    background-repeat: no-repeat;
   }
 }
 
-.tours__info-list {
-  @include list-resseting;
-
+.tours__info-wrapper {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 12px 5px;
+  align-items: center;
 }
 
-.tours__info-item {
+.tours__info-name {
   position: relative;
+  width: min-content;
+  margin: 0;
+  padding: 7px 13px 9px 34px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: $white;
+  background-color: $additional;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    width: 9px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-pin-view");
+    background-color: $white;
+    translate: 0 -50%;
+  }
+}
+
+.tours__info-days {
+  display: flex;
+  width: min-content;
+}
+
+.tours__info-value {
+  position: relative;
+  margin: 0;
   padding: 7px 0 8px 32px;
   font-size: 12px;
   font-weight: 500;
@@ -80,20 +151,7 @@
   }
 }
 
-.tours__info-item--place {
-  margin-right: 5px;
-  padding: 7px 13px 9px 34px;
-  background-color: $additional;
-
-  &::before {
-    left: 16px;
-    width: 9px;
-    height: 12px;
-    mask-image: url("/__spritemap#sprite-pin-view");
-  }
-}
-
-.tours__info-item--days {
+.tours__info-value--day {
   margin-right: 14px;
 
   &::before {
@@ -101,7 +159,7 @@
   }
 }
 
-.tours__info-item--night {
+.tours__info-value--night {
   &::before {
     mask-image: url("/__spritemap#sprite-night-view");
   }
@@ -132,6 +190,7 @@
 }
 
 .tours__programs {
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, max-content);
   gap: 5px 8px;
@@ -158,11 +217,18 @@
   grid-row: 2 / 3;
   align-self: center;
 
-  &--level {
+  &--level-4 {
     width: 84px;
     height: 16px;
     background-color: $white;
     mask-image: url("/__spritemap#sprite-stars4-view");
+  }
+
+  &--level-5 {
+    width: 84px;
+    height: 16px;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-stars5-view");
   }
 }
 
