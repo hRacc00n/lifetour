@@ -1,0 +1,173 @@
+.training__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 37px 15px 20px;
+}
+
+.training__title {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: $primary;
+}
+
+.training__text {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: $primary;
+}
+
+.trainig__subtitle {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: $primary;
+}
+
+.training__list {
+  @include list-resseting;
+
+  width: 320px;
+  margin-bottom: 26px;
+}
+
+.training__item {
+  padding: 14px;
+  border: 1px solid $additional10;
+}
+
+.training__photo {
+  display: block;
+  margin-bottom: 17px;
+  width: 260px;
+  height: 200px;
+}
+
+.training__content {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+}
+
+.training__name {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: $primary;
+}
+
+.training__link {
+  position: relative;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(45, 56, 63, 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 8px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    translate: -50% -50%;
+    background-color: $primary;
+  }
+}
+
+.training__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: $primary;
+}
+
+.training__process-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: $primary;
+}
+
+.training__process-list {
+  @include list-resseting;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    width: 2px;
+    height: 90%;
+    background-color: $additional;
+  }
+}
+
+.training__process-item {
+  position: relative;
+  width: 260px;
+  padding-left: 63px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 29px;
+    width: 25px;
+    height: 25px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-color: $additional;
+    border-radius: 50%;
+  }
+
+  &:first-child::before {
+    background-image: url("/__spritemap#sprite-map-view");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("/__spritemap#sprite-boot-view");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("/__spritemap#sprite-forest-view");
+  }
+
+  &:last-child::before {
+    background-image: url("/__spritemap#sprite-mountains-view");
+  }
+
+  &:last-child::after {
+    top: auto;
+    bottom: 9px;
+  }
+
+}
