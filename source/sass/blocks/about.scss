@@ -1,0 +1,52 @@
+.about {
+  background:
+    image-set(
+      url("../../img/about/about-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/about/about-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/about/about-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/about/about-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+  background-position: 0 20px;
+}
+
+.about__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 437px 15px 20px;
+}
+
+.about__container h2 {
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: $primary;
+}
+
+.about__list {
+  @include list-resseting;
+
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.about__item h3 {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: $primary;
+}
+
+.about__item p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: $primary;
+}
