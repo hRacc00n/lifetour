@@ -208,6 +208,33 @@
     translate: -50% -50%;
     background-color: $primary;
   }
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $additional;
+    border-color: $additional;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:disabled {
+    background-color: $white;
+    border-color: $disabled;
+
+    &::before {
+      background-color: $disabled;
+    }
+  }
 }
 
 .training__description {
