@@ -61,12 +61,12 @@ const swiperTraining = new Swiper('.training__swiper', {
     },
     768: {
       initialSlide: 0,
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 4,
+      spaceBetween: 20,
       simulateTouch: false,
     }
   }
