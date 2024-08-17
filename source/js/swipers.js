@@ -24,8 +24,8 @@ const swiperHero = new Swiper('.hero__swiper', {
 const swiperTours = new Swiper('.tours__swiper', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.tours__button--next',
-    prevEl: '.tours__button--prev',
+    nextEl: '.tours__button-next',
+    prevEl: '.tours__button-prev',
   },
   breakpoints: {
     320: {
