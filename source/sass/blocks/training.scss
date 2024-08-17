@@ -39,6 +39,7 @@
 }
 
 .training__item {
+  min-height: 356px;
   padding: 14px;
   border: 1px solid $additional10;
 }
@@ -169,5 +170,4 @@
     top: auto;
     bottom: 9px;
   }
-
 }
