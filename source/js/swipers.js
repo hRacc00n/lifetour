@@ -10,6 +10,7 @@ const swiperHero = new Swiper('.hero__swiper', {
     el: '.hero__paginations',
     clickable: true,
   },
+  autoHeight: true,
   breakpoints: {
     320: {
       loop: true,
@@ -24,12 +25,14 @@ const swiperHero = new Swiper('.hero__swiper', {
 const swiperTours = new Swiper('.tours__swiper', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.tours__button--next',
-    prevEl: '.tours__button--prev',
+    nextEl: '.tours__button-next',
+    prevEl: '.tours__button-prev',
   },
+  autoHeight: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
+      simulateTouch: true,
     },
     768: {
       slidesPerView: 2,
@@ -38,8 +41,35 @@ const swiperTours = new Swiper('.tours__swiper', {
     1440: {
       slidesPerView: 3,
       spaceBetween: 30,
+      simulateTouch: false,
     }
   }
 });
 
-export { swiperHero, swiperTours };
+const swiperTraining = new Swiper('.training__swiper', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.training__button-next',
+    prevEl: '.training__button-prev',
+  },
+  autoHeight: true,
+  breakpoints: {
+    320: {
+      initialSlide: 2,
+      slidesPerView: 1,
+      simulateTouch: true,
+    },
+    768: {
+      initialSlide: 0,
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      simulateTouch: false,
+    }
+  }
+});
+
+export { swiperHero, swiperTours, swiperTraining };

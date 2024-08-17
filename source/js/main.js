@@ -5,12 +5,13 @@
 
 import { onBurgerSwitchDisplay } from './on-burger-switch-display';
 import { burgerButton } from './variables';
-import { swiperHero, swiperTours } from './swipers';
+import { swiperHero, swiperTours, swiperTraining } from './swipers';
 
 burgerButton.addEventListener('click', onBurgerSwitchDisplay);
 
 swiperHero.update();
 swiperTours.update();
+swiperTraining.update();
 
 const titlesShadow = document.querySelectorAll('.title-shadow');
 

@@ -1,0 +1,452 @@
+.training {
+  @media ($tablet) {
+    background-image:
+      image-set(
+        url("../../img/tours/clouds1-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/clouds1-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/clouds1-tablet@1x.png") type("image/png") 1x,
+        url("../../img/tours/clouds1-tablet@2x.png") type("image/png") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: top -730px right;
+  }
+
+  @media ($desktop) {
+    background-image:
+      image-set(
+        url("../../img/tours/clouds1-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/clouds1-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/clouds1-desktop@1x.png") type("image/png") 1x,
+        url("../../img/tours/clouds1-desktop@2x.png") type("image/png") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: top -940px right;
+  }
+}
+
+.training__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 37px 15px 20px;
+
+  @media ($tablet) {
+    width: 768px;
+    padding: 59px 45px 40px;
+  }
+
+  @media ($desktop) {
+    width: 1440px;
+    padding: 62px 120px 40px;
+  }
+}
+
+.training__title {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: $primary;
+
+  @media ($tablet) {
+    margin-bottom: 34px;
+    font-size: 25px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 32px;
+    font-size: 35px;
+  }
+}
+
+.training__text {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: $primary;
+
+  @media ($tablet) {
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media ($desktop) {
+    width: 820px;
+    margin-bottom: 58px;
+  }
+}
+
+.training__text br {
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+}
+
+.training__subtitle {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  color: $primary;
+
+  @media ($tablet) {
+    margin-bottom: 37px;
+    font-size: 25px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 16px;
+    font-size: 35px;
+  }
+}
+
+.training__swiper.swiper {
+  position: relative;
+
+  @media ($tablet) {
+    padding-top: 3px;
+  }
+
+  @media ($desktop) {
+    padding-top: 4px;
+  }
+}
+
+.training__navigation {
+  @media ($tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.training__list {
+  @include list-resseting;
+
+  width: 320px;
+  margin-bottom: 26px;
+
+  @media ($tablet) {
+    margin-bottom: 27px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 58px;
+  }
+}
+
+.training__item {
+  min-height: 356px;
+  padding: 14px;
+  border: 1px solid $additional10;
+  background-color: $white;
+
+  @media ($tablet) {
+    min-height: 388px;
+  }
+
+  @media ($desktop) {
+    min-height: 356px;
+  }
+}
+
+.training__photo {
+  display: block;
+  margin-bottom: 17px;
+  width: 260px;
+  height: 200px;
+
+  @media ($tablet) {
+    width: 183px;
+    height: 200px;
+  }
+
+  @media ($desktop) {
+    width: 255px;
+  }
+}
+
+.training__content {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+}
+
+.training__name {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: $primary;
+}
+
+.training__link {
+  position: relative;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(45, 56, 63, 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 8px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    translate: -50% -50%;
+    background-color: $primary;
+  }
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $additional;
+    border-color: $additional;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:disabled {
+    background-color: $white;
+    border-color: $disabled;
+
+    &::before {
+      background-color: $disabled;
+    }
+  }
+}
+
+.training__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: $primary;
+
+  @media ($tablet) {
+    grid-column: 1 / -1;
+  }
+}
+
+.training__process-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: $primary;
+
+  @media ($tablet) {
+    margin-bottom: 102px;
+    font-size: 18px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 27px;
+    font-size: 21px;
+  }
+}
+
+.training__process-list {
+  @include list-resseting;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    width: 2px;
+    height: 90%;
+    background-color: $additional;
+  }
+
+  @media ($tablet) {
+    display: grid;
+    grid-template-columns: 232px 272px;
+    justify-content: space-between;
+    gap: 104px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media ($desktop) {
+    display: flex;
+    min-height: 102px;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0;
+
+    &::before {
+      display: block;
+      top: auto;
+      bottom: 20px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, $white 0, $white 20px, $additional 20px);
+    }
+  }
+}
+
+.training__process-item {
+  position: relative;
+  width: 260px;
+  padding-left: 63px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 29px;
+    width: 25px;
+    height: 25px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-color: $additional;
+    border-radius: 50%;
+  }
+
+  &:first-child::before {
+    background-image: url("/__spritemap#sprite-map-view");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("/__spritemap#sprite-boot-view");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("/__spritemap#sprite-forest-view");
+  }
+
+  &:last-child::before {
+    background-image: url("/__spritemap#sprite-mountains-view");
+  }
+
+  &:last-child::after {
+    top: auto;
+    bottom: 9px;
+  }
+
+  @media ($tablet) {
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 1.57;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media ($desktop) {
+    width: 253px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &::after {
+      display: block;
+      top: auto;
+      bottom: 14px;
+      left: 20px;
+    }
+
+    &:nth-child(1) {
+      order: 0;
+    }
+
+    &:nth-child(2) {
+      order: 0;
+    }
+
+    &:nth-child(3) {
+      order: 0;
+
+      &::after {
+        left: 1px;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 0;
+
+      &::after {
+        bottom: 14px;
+        left: 21px;
+      }
+    }
+
+    &::before {
+      top: 2px;
+      left: 10px;
+    }
+  }
+}
+
+.training__process-item br {
+  display: none;
+
+  @media ($desktop) {
+    &:first-child {
+      display: block;
+    }
+  }
+}

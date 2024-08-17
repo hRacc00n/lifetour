@@ -42,7 +42,7 @@
             </li>
 
             <li class="header__item">
-              <a class="header__link" href="#">Обучение</a>
+              <a class="header__link" href="#training">Обучение</a>
             </li>
 
             <li class="header__item">
@@ -139,11 +139,11 @@
         <div class="tours__container">
           <h2 class="tours__title title-shadow">Ближайшие туры</h2>
 
-          <div class="tours__navigation">
-            <button class="tours__button tours__button--prev" type="button">
+          <div class="tours__navigation navigation">
+            <button class="tours__button-prev navigation__button navigation__button--prev" type="button">
               <span class="visually-hidden">Предыдующий тур</span>
             </button>
-            <button class="tours__button tours__button--next" type="button">
+            <button class="tours__button-next navigation__button navigation__button--next" type="button">
               <span class="visually-hidden">Следующий тур</span>
             </button>
           </div>
@@ -256,7 +256,128 @@
 
       </section>
 
-      <div data-test="training">training</div>
+      <section class="training" id="training" data-test="training">
+
+        <div class="training__container">
+
+          <h3 class="training__title title-shadow">Обучение</h3>
+          <p class="training__text">Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+
+          <div class="training__swiper swiper">
+
+            <h4 class="training__subtitle">Наши инструкторы</h4>
+
+            <div class="training__navigation navigation">
+              <button class="training__button-prev navigation__button navigation__button--prev" type="button">
+                <span class="visually-hidden">Предыдующий инструктор</span>
+              </button>
+              <button class="training__button-next navigation__button navigation__button--next" type="button">
+                <span class="visually-hidden">Следующий инструктор</span>
+              </button>
+            </div>
+
+            <ul class="training__list swiper-wrapper">
+
+              <li class="training__item swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/prokofiev-mobile-desktop@1x.webp 1x, img/training/prokofiev-mobile-desktop@2x.webp 2x" width="255" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/training/prokofiev-tablet@1x.webp 1x, img/training/prokofiev-tablet@2x.webp 2x" width="182" height="200">
+                  <source type="image/webp" srcset="img/training/prokofiev-mobile-desktop@1x.webp 1x, img/training/prokofiev-mobile-desktop@2x.webp 2x" width="260" height="200">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/training/prokofiev-mobile-desktop@1x.jpg 1x, img/training/prokofiev-mobile-desktop@2x.jpg 2x" width="255" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/training/prokofiev-tablet@1x.jpg 1x, img/training/prokofiev-tablet@2x.jpg 2x" width="182" height="200">
+                  <img class="training__photo" src="img/training/prokofiev-mobile-desktop@1x.jpg" srcset="img/training/prokofiev-mobile-desktop@2x.jpg 2x" alt="Инструктор Александр Прокофьев" width="260" height="200">
+                </picture>
+                <div class="training__content">
+                  <h5 class="training__name">Александр<br> Прокофьев</h5>
+                  <a class="training__link" href="#">
+                    <span class="visually-hidden">Переход на страницу ВКонтакте</span>
+                  </a>
+                  <p class="training__description">Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                </div>
+              </li>
+
+              <li class="training__item swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/afinogenova-mobile-desktop@1x.webp 1x, img/training/afinogenova-mobile-desktop@2x.webp 2x" width="255" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/training/afinogenova-tablet@1x.webp 1x, img/training/afinogenova-tablet@2x.webp 2x" width="182" height="200">
+                  <source type="image/webp" srcset="img/training/afinogenova-mobile-desktop@1x.webp 1x, img/training/afinogenova-mobile-desktop@2x.webp 2x" width="260" height="200">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/training/afinogenova-mobile-desktop@1x.jpg 1x, img/training/afinogenova-mobile-desktop@2x.jpg 2x" width="255" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/training/afinogenova-tablet@1x.jpg 1x, img/training/afinogenova-tablet@2x.jpg 2x" width="182" height="200">
+                  <img class="training__photo" src="img/training/afinogenova-mobile-desktop@1x.jpg" srcset="img/training/afinogenova-mobile-desktop@2x.jpg 2x" alt="Инструктор Светлана Афиногенова" width="260" height="200">
+                </picture>
+                <div class="training__content">
+                  <h5 class="training__name">Светлана<br> Афиногенова</h5>
+                  <a class="training__link" href="#">
+                    <span class="visually-hidden">Переход на страницу ВКонтакте</span>
+                  </a>
+                  <p class="training__description">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                </div>
+              </li>
+
+              <li class="training__item swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/kolesnichenko-desktop@1x.webp 1x, img/training/kolesnichenko-desktop@2x.webp 2x" width="255" height="200">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/training/kolesnichenko-tablet@1x.webp 1x, img/training/kolesnichenko-tablet@2x.webp 2x" width="182" height="200">
+                  <source type="image/webp" srcset="img/training/kolesnichenko-mobile@1x.webp 1x, img/training/kolesnichenko-mobile@2x.webp 2x" width="260" height="200">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/training/kolesnichenko-desktop@1x.jpg 1x, img/training/kolesnichenko-desktop@2x.jpg 2x" width="255" height="200">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/training/kolesnichenko-tablet@1x.jpg 1x, img/training/kolesnichenko-tablet@2x.jpg 2x" width="182" height="200">
+                  <img class="training__photo" src="img/training/kolesnichenko-mobile@1x.jpg" srcset="img/training/kolesnichenko-mobile@2x.jpg 2x" alt="Инструктор Надежда Колесниченко" width="260" height="200">
+                </picture>
+                <div class="training__content">
+                  <h5 class="training__name">Надежда<br> Колесниченко</h5>
+                  <a class="training__link" href="#">
+                    <span class="visually-hidden">Переход на страницу ВКонтакте</span>
+                  </a>
+                  <p class="training__description">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                </div>
+              </li>
+
+              <li class="training__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/training/kaigorodov-mobile-tablet-desktop@1x.webp 1x, img/training/kaigorodov-mobile-tablet-desktop@2x.webp 2x" width="260" height="200">
+                  <img class="training__photo" src="img/training/kaigorodov-mobile-tablet-desktop@1x.jpg" srcset="img/training/kaigorodov-mobile-tablet-desktop@2x.jpg 2x" alt="Инструктор Федор Кайгородов" width="260" height="200">
+                </picture>
+                <div class="training__content">
+                  <h5 class="training__name">Федор<br> Кайгородов</h5>
+                  <a class="training__link" href="#">
+                    <span class="visually-hidden">Переход на страницу ВКонтакте</span>
+                  </a>
+                  <p class="training__description">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                </div>
+              </li>
+
+              <li class="training__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/training/vasnecov-mobile-tablet-desktop@1x.webp 1x, img/training/vasnecov-mobile-tablet-desktop@2x.webp 2x" width="260" height="200">
+                  <img class="training__photo" src="img/training/vasnecov-mobile-tablet-desktop@1x.jpg" srcset="img/training/vasnecov-mobile-tablet-desktop@2x.jpg 2x" alt="Инструктор Даниэль Васнецов" width="260" height="200">
+                </picture>
+                <div class="training__content">
+                  <h5 class="training__name">Даниэль<br> Васнецов</h5>
+                  <a class="training__link" href="#">
+                    <span class="visually-hidden">Переход на страницу ВКонтакте</span>
+                  </a>
+                  <p class="training__description">Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="training__process">
+              <h4 class="training__process-title">Процесс обучения</h4>
+
+              <ul class="training__process-list">
+                <li class="training__process-item">Изучение спортивного туристского движения</li>
+                <li class="training__process-item">Подготовка и техническое снаряжение в походах</li>
+                <li class="training__process-item">Лекции<br> по окружающей среде, экологии и гигиене</li>
+                <li class="training__process-item">Разъяснение<br> сложности<br> горных препятствий</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
       <div data-test="about">about</div>
       <div data-test="reviews">reviews</div>
       <div data-test="adv">adv</div>
