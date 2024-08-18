@@ -75,8 +75,8 @@ const swiperTraining = new Swiper('.training__swiper', {
 const swiperReviews = new Swiper('.reviews__swiper', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.training__button-next',
-    prevEl: '.training__button-prev',
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
   },
   autoHeight: true,
   breakpoints: {
@@ -85,8 +85,9 @@ const swiperReviews = new Swiper('.reviews__swiper', {
       simulateTouch: true,
     },
     768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 2,
+      spaceBetween: 30,
+      simulateTouch: true,
     },
     1440: {
       slidesPerView: 4,

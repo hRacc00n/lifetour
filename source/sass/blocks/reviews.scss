@@ -1,7 +1,19 @@
+.reviews {
+  @media ($tablet) {
+    overflow: hidden;
+  }
+}
+
 .reviews__container {
   width: 320px;
   margin: 0 auto;
   padding: 37px 15px 20px;
+
+  @media ($tablet) {
+    position: relative;
+    width: 768px;
+    padding: 59px 45px 40px;
+  }
 }
 
 .reviews__title {
@@ -11,21 +23,48 @@
   font-weight: 800;
   line-height: 1;
   color: $primary;
+
+  @media ($tablet) {
+    margin-bottom: 35px;
+    font-size: 25px;
+  }
+}
+
+.reviews__navigation {
+  position: absolute;
+  top: 61px;
+  right: 45px;
 }
 
 
 .reviews__swiper {
-  width: 290px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+
+  @media ($tablet) {
+    width: 1160px;
+  }
 }
 
 .reviews__swiper-wrapper {
   @include list-resseting;
 }
 
-.reviews__swiper-slide {
+.reviews__swiper-slide.swiper-slide {
   padding: 20px;
   background-color: $white;
+
+  @media ($tablet) {
+    display: grid;
+    width: 565px;
+    padding: 21px 20px 20px;
+    grid-template-columns: 186px 299px;
+    gap: 0 29px;
+    box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  }
+}
+
+.reviews__swiper-slide picture {
+  grid-row: 1 / 4;
 }
 
 .reviews__photo {
@@ -33,6 +72,13 @@
   width: 250px;
   height: 169px;
   margin-bottom: 19px;
+
+  @media ($tablet) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    grid-column: 1 / 2;
+  }
 }
 
 .reviews__swiper-slide > p {
@@ -46,6 +92,23 @@
   &:last-of-type {
     margin-bottom: 16px;
   }
+
+  @media ($tablet) {
+    position: relative;
+    top: 4px;
+    grid-column: 2 / 3;
+    margin-bottom: 7px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.reviews__info {
+  @media ($tablet) {
+    grid-column: 2 / 3;
+  }
 }
 
 .reviews__name {
@@ -55,6 +118,10 @@
   font-weight: 700;
   line-height: 1;
   color: $primary;
+
+  @media ($tablet) {
+    font-size: 13px;
+  }
 }
 
 .reviews__author-info {
