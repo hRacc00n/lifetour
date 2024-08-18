@@ -38,7 +38,7 @@
 .about__container {
   width: 320px;
   margin: 0 auto;
-  padding: 437px 15px 20px;
+  padding: 437px 15px 21px;
 
   @media ($tablet) {
     display: grid;
@@ -55,6 +55,7 @@
 }
 
 .about__container h2 {
+  position: relative;
   margin: 0;
   margin-bottom: 42px;
   font-size: 22px;
@@ -62,15 +63,35 @@
   line-height: 1;
   color: $primary;
 
+  &::before {
+    content: attr(data-name) / "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    color: $primary;
+    opacity: 0.03;
+  }
+
   @media ($tablet) {
     margin-bottom: 48px;
     font-size: 25px;
     grid-column: 2 / 3;
+
+    &::before {
+      font-size: 40px;
+    }
   }
 
   @media ($desktop) {
     margin-bottom: 59px;
     font-size: 35px;
+
+    &::before {
+      font-size: 55px;
+    }
   }
 }
 
@@ -127,12 +148,12 @@
     font-size: 14px;
     line-height: 1.57;
   }
+}
 
-  .about__item p br {
-    display: none;
+.about__item p br {
+  display: none;
 
-    @media ($desktop) {
-      display: block;
-    }
+  @media ($desktop) {
+    display: block;
   }
 }

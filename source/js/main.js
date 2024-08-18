@@ -5,15 +5,18 @@
 
 import { onBurgerSwitchDisplay } from './on-burger-switch-display';
 import { burgerButton } from './variables';
-import { swiperHero, swiperTours, swiperTraining } from './swipers';
+import { swiperHero, swiperReviews, swiperTours, swiperTraining } from './swipers';
 
 burgerButton.addEventListener('click', onBurgerSwitchDisplay);
 
 swiperHero.update();
 swiperTours.update();
 swiperTraining.update();
+swiperReviews.update();
 
+document.querySelector('.about__container h2').classList.add('title-shadow');
 const titlesShadow = document.querySelectorAll('.title-shadow');
+
 
 titlesShadow.forEach((element) => {
   element.dataset.name = element.textContent;

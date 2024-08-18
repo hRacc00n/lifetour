@@ -72,4 +72,28 @@ const swiperTraining = new Swiper('.training__swiper', {
   }
 });
 
-export { swiperHero, swiperTours, swiperTraining };
+const swiperReviews = new Swiper('.reviews__swiper', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.training__button-next',
+    prevEl: '.training__button-prev',
+  },
+  autoHeight: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      simulateTouch: true,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      simulateTouch: false,
+    }
+  }
+});
+
+export { swiperHero, swiperTours, swiperTraining, swiperReviews };
