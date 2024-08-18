@@ -11,8 +11,8 @@
 
   @media ($tablet) {
     position: relative;
-    width: 768px;
-    padding: 59px 45px 40px;
+    width: 100%;
+    padding: 59px 0 40px 45px;
   }
 }
 
@@ -41,7 +41,7 @@
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
   @media ($tablet) {
-    width: 1160px;
+    width: 100%;
   }
 }
 

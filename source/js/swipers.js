@@ -85,7 +85,7 @@ const swiperReviews = new Swiper('.reviews__swiper', {
       simulateTouch: true,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1.265,
       spaceBetween: 30,
       simulateTouch: true,
     },
