@@ -2,6 +2,11 @@
   width: 320px;
   margin: 0 auto;
   padding: 37px 15px 20px;
+
+  @media ($tablet) {
+    width: 768px;
+    padding: 60px 45px 40px;
+  }
 }
 
 .adv__title {
@@ -12,10 +17,22 @@
   line-height: 1;
   text-align: center;
   color: $primary;
+
+  @media ($tablet) {
+    margin-bottom: 60px;
+    font-size: 25px;
+  }
 }
 
 .adv__list {
   @include list-resseting;
+
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 30px;
+    justify-content: center;
+  }
 }
 
 .adv__item {
@@ -48,6 +65,25 @@
     left: 50%;
     translate: -50% 0;
     background-color: $additional;
+  }
+
+  @media ($tablet) {
+    width: 324px;
+    padding: 103px 19px 30px;
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+
+    &::before {
+      top: 29px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &::after {
+      top: 41px;
+    }
   }
 }
 
@@ -89,6 +125,10 @@
   line-height: 1;
   color: $primary;
   text-align: center;
+
+  @media ($tablet) {
+    font-size: 16px;
+  }
 }
 
 .adv__item:last-child h3 {
@@ -108,4 +148,9 @@
   line-height: 1.5;
   color: $primary;
   text-align: center;
+
+  @media ($tablet) {
+    font-size: 14px;
+    line-height: 1.57;
+  }
 }
