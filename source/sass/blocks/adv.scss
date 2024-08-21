@@ -7,6 +7,12 @@
     width: 768px;
     padding: 60px 45px 40px;
   }
+
+  @media ($desktop) {
+    position: relative;
+    width: 1440px;
+    padding: 135px 0 185px;
+  }
 }
 
 .adv__title {
@@ -22,6 +28,11 @@
     margin-bottom: 60px;
     font-size: 25px;
   }
+
+  @media ($desktop) {
+    margin-bottom: 50px;
+    font-size: 35px;
+  }
 }
 
 .adv__list {
@@ -33,11 +44,19 @@
     gap: 28px 30px;
     justify-content: center;
   }
+
+  @media ($desktop) {
+    width: 1440px;
+    flex-wrap: nowrap;
+    gap: 0;
+    left: 100px;
+  }
 }
 
 .adv__item {
   position: relative;
   width: 290px;
+  min-height: 290px;
   padding: 81px 9px 19px;
   border: 1px solid $additional10;
 
@@ -69,6 +88,7 @@
 
   @media ($tablet) {
     width: 324px;
+    min-height: 324px;
     padding: 103px 19px 30px;
 
     &:not(:last-child) {
@@ -85,33 +105,56 @@
       top: 41px;
     }
   }
+
+  @media ($desktop) {
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 329px;
+    padding: 123px 19px 40px;
+
+    &::before {
+      top: 39px;
+      width: 54px;
+      height: 54px;
+    }
+
+    &::after {
+      top: 54px;
+    }
+  }
 }
 
-.adv__item:first-child {
+.adv__item.swiper-slide {
+  @media ($desktop) {
+    width: 380px;
+  }
+}
+
+.adv__item--save {
   &::after {
     mask-image: url("/__spritemap#sprite-save-view");
   }
 }
 
-.adv__item:nth-child(2) {
+.adv__item--crown {
   &::after {
     mask-image: url("/__spritemap#sprite-crown-view");
   }
 }
 
-.adv__item:nth-child(3) {
+.adv__item--equipment {
   &::after {
     mask-image: url("/__spritemap#sprite-equipment-view");
   }
 }
 
-.adv__item:nth-child(4) {
+.adv__item--route {
   &::after {
     mask-image: url("/__spritemap#sprite-route-view");
   }
 }
 
-.adv__item:last-child {
+.adv__item--eco {
   &::after {
     mask-image: url("/__spritemap#sprite-eco-view");
   }
@@ -129,11 +172,21 @@
   @media ($tablet) {
     font-size: 16px;
   }
+
+  @media ($desktop) {
+    font-size: 18px;
+  }
 }
 
 .adv__item:last-child h3 {
   position: relative;
   left: -2px;
+}
+
+.adv__item h3 br {
+  @media ($desktop) {
+    display: none;
+  }
 }
 
 .adv__item:last-child h3 span {
@@ -152,5 +205,26 @@
   @media ($tablet) {
     font-size: 14px;
     line-height: 1.57;
+  }
+}
+
+.adv__item p br {
+  display: none;
+
+  @media ($desktop) {
+    display: block;
+  }
+}
+
+.adv__navigation {
+  position: absolute;
+  bottom: 101px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.adv__list.swiper-wrapper {
+  @media ($desktop) {
+    width: 100%;
   }
 }
