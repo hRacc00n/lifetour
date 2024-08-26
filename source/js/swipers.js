@@ -72,4 +72,50 @@ const swiperTraining = new Swiper('.training__swiper', {
   }
 });
 
-export { swiperHero, swiperTours, swiperTraining };
+const swiperReviews = new Swiper('.reviews__swiper', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+  autoHeight: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      simulateTouch: true,
+    },
+    768: {
+      slidesPerView: 1.265,
+      spaceBetween: 30,
+      simulateTouch: true,
+    },
+    1440: {
+      slidesPerView: 1.756,
+      spaceBetween: 120,
+      simulateTouch: false,
+    }
+  }
+});
+
+const swiperAdv = new Swiper('.adv__swiper', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.adv__button-next',
+    prevEl: '.adv__button-prev',
+  },
+  enabled: false,
+  breakpoints: {
+    1440: {
+      enabled: true,
+      slidesPerView: 'auto',
+      initialSlide: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      slidesPerGroup: 2,
+      simulateTouch: false,
+    }
+  }
+});
+
+export { swiperHero, swiperTours, swiperTraining, swiperReviews, swiperAdv };
