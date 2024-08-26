@@ -118,4 +118,15 @@ const swiperAdv = new Swiper('.adv__swiper', {
   }
 });
 
+const swiperGallery = new Swiper('.gallery__swiper', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev',
+  },
+  spaceBetween: 5,
+  slidesPerView: 2,
+  loop: true,
+});
+
 export { swiperHero, swiperTours, swiperTraining, swiperReviews, swiperAdv };
