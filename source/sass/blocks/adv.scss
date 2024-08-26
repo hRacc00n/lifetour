@@ -2,6 +2,11 @@
   width: 320px;
   margin: 0 auto;
   padding: 37px 15px 20px;
+
+  @media ($tablet) {
+    width: 768px;
+    padding: 60px 45px 40px;
+  }
 }
 
 .adv__title {
@@ -12,6 +17,11 @@
   line-height: 1;
   text-align: center;
   color: $primary;
+
+  @media ($tablet) {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
 }
 
 .adv__swiper.swiper {
@@ -23,6 +33,13 @@
 
   flex-direction: column;
   gap: 15px;
+
+  @media ($tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 30px;
+  }
 }
 
 .adv__item.swiper-slide {
@@ -54,7 +71,8 @@
 
   @media ($tablet) {
     width: 324px;
-    min-height: 324px;
+    max-width: 324px;
+    min-height: 340px;
     padding: 103px 19px 30px;
 
     &:not(:last-child) {
@@ -132,6 +150,10 @@
   line-height: 1;
   text-align: center;
   color: $primary;
+
+  @media ($tablet) {
+    font-size: 16px;
+  }
 }
 
 .adv__item p {
@@ -141,6 +163,17 @@
   line-height: 1.5;
   text-align: center;
   color: $primary;
+
+  @media ($tablet) {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
+
+.adv__item p br {
+  @media ($tablet) {
+    display: none;
+  }
 }
 
 // .adv__container {
