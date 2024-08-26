@@ -118,26 +118,26 @@ const swiperAdv = new Swiper('.adv__swiper', {
   }
 });
 
-window.addEventListener('resize', () => {
-  const advItems = document.querySelectorAll('.adv__item');
-  const advList = document.querySelector('.adv__list');
+// window.addEventListener('resize', () => {
+//   const advItems = document.querySelectorAll('.adv__item');
+//   const advList = document.querySelector('.adv__list');
 
-  if (window.screen.width >= 1440) {
-    advList.classList.add('swiper-wrapper');
-    advItems.forEach((element) => {
-      if (!element.classList.contains('swiper-slide')) {
-        element.classList.add('swiper-slide');
-      }
-    });
-  } else {
-    swiperAdv.disable();
-    advList.classList.remove('swiper-wrapper');
-    advItems.forEach((element) => {
-      if (element.classList.contains('swiper-slide')) {
-        element.classList.remove('swiper-slide');
-      }
-    });
-  }
-});
+//   if (window.screen.width >= 1440) {
+//     advList.classList.add('swiper-wrapper');
+//     advItems.forEach((element) => {
+//       if (!element.classList.contains('swiper-slide')) {
+//         element.classList.add('swiper-slide');
+//       }
+//     });
+//   } else {
+//     swiperAdv.disable();
+//     advList.classList.remove('swiper-wrapper');
+//     advItems.forEach((element) => {
+//       if (element.classList.contains('swiper-slide')) {
+//         element.classList.remove('swiper-slide');
+//       }
+//     });
+//   }
+// });
 
 export { swiperHero, swiperTours, swiperTraining, swiperReviews, swiperAdv };
