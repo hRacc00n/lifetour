@@ -124,9 +124,17 @@ const swiperGallery = new Swiper('.gallery__swiper', {
     nextEl: '.gallery__button-next',
     prevEl: '.gallery__button-prev',
   },
-  spaceBetween: 5,
-  slidesPerView: 2,
   loop: true,
+  breakpoints: {
+    320: {
+      spaceBetween: 5,
+      slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 5,
+      slidesPerView: 3,
+    }
+  }
 });
 
 export { swiperHero, swiperTours, swiperTraining, swiperReviews, swiperAdv };
