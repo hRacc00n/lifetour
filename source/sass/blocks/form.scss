@@ -1,0 +1,76 @@
+.form {
+  position: relative;
+  top: -8px;
+  background:
+    image-set(
+      url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/form/form-mobile@2x.jpg") type("image/jpeg") 2x,
+    );
+}
+
+.form__container {
+  padding: 177px 31px 174px;
+}
+
+.form__container h2 {
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+}
+
+.form__container p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: $white;
+}
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__input {
+  width: 258px;
+  padding: 17px 15px 12px;
+  font-family: $basic-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: $primary;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.form__text {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: $primary;
+  opacity: 0.5;
+  translate: 0 -50%;
+}
+
+.form__button {
+  width: 100%;
+  background-color: $additional;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
