@@ -140,4 +140,4 @@ const swiperGallery = new Swiper('.gallery__swiper', {
   }
 });
 
-export { swiperHero, swiperTours, swiperTraining, swiperReviews, swiperAdv };
+export { swiperHero, swiperTours, swiperTraining, swiperReviews, swiperAdv, swiperGallery };
