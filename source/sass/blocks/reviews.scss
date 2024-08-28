@@ -51,14 +51,14 @@
 
 
 .reviews__swiper {
-  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
-
   @media ($tablet) {
     width: 100%;
   }
+}
 
-  @media ($desktop) {
-    // width: 1440px;
+.reviews__swiper.swiper {
+  @media ($tablet) {
+    overflow: visible;
   }
 }
 
