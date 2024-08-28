@@ -366,6 +366,15 @@
   background-color: transparent;
   opacity: 1;
 
+  &:hover,
+  &:focus-visible {
+    background-color: #d9d9d9;
+  }
+
+  &:active {
+    background-color: $white50;
+  }
+
   @media ($tablet) {
     width: 20px;
     height: 20px;
