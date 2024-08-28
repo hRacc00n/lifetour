@@ -550,8 +550,120 @@
       </section>
 
 
-      <div data-test="gallery">gallery</div>
-      <div data-test="form">form</div>
+      <section class="gallery" data-test="gallery">
+        <div class="gallery__container">
+          <div class="gallery__content">
+            <h2 class="gallery__title title-shadow">Фотогалерея</h2>
+            <p>Добавляйте фото с хэштегом #лайфтур, <br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+
+            <div class="gallery__navigation navigation">
+              <button class="gallery__button-prev navigation__button navigation__button--prev" type="button">
+                <span class="visually-hidden">Предыдующий отзыв</span>
+              </button>
+              <button class="gallery__button-next navigation__button navigation__button--next" type="button">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery__swiper swiper">
+            <ul class="gallery__wrapper swiper-wrapper">
+
+              <li class="gallery__slide gallery__slide--long swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo1@1x.webp 1x, img/gallery/photo1@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo1-tablet@1x.webp 1x, img/gallery/photo1-tablet@2x.webp 2x" width="253" height="418">
+                  <source type="image/webp" srcset="img/gallery/photo1-mobile@1x.webp 1x, img/gallery/photo1-mobile@2x.webp 2x" width="158" height="266">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo1@1x.jpg 1x, img/gallery/photo1@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo1-tablet@1x.jpg 1x, img/gallery/photo1-tablet@2x.jpg 2x" width="253" height="418">
+                  <img class="gallery__photo" src="img/gallery/photo1-mobile@1x.jpg" srcset="img/gallery/photo1-mobile@2x.jpg 2x" alt="Турист на фоне гор" width="158" height="266">
+                </picture>
+              </li>
+
+              <li class="gallery__slide gallery__slide--group swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo2@1x.webp 1x, img/gallery/photo2@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo2-tablet@1x.webp 1x, img/gallery/photo2-tablet@2x.webp 2x" width="252" height="210">
+                  <source type="image/webp" srcset="img/gallery/photo2-mobile@1x.webp 1x, img/gallery/photo2-mobile@2x.webp 2x" width="157" height="135">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo2@1x.jpg 1x, img/gallery/photo2@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo2-tablet@1x.jpg 1x, img/gallery/photo2-tablet@2x.jpg 2x" width="252" height="210">
+                  <img class="gallery__photo" src="img/gallery/photo2-mobile@1x.jpg" srcset="img/gallery/photo2-mobile@2x.jpg 2x" alt="Туристы собрались вокруг костра" width="157" height="135">
+                </picture>
+
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo3@1x.webp 1x, img/gallery/photo3@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo3-tablet@1x.webp 1x, img/gallery/photo3-tablet@2x.webp 2x" width="252" height="210">
+                  <source type="image/webp" srcset="img/gallery/photo3-mobile@1x.webp 1x, img/gallery/photo3-mobile@2x.webp 2x" width="157" height="135">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo3@1x.jpg 1x, img/gallery/photo3@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo3-tablet@1x.jpg 1x, img/gallery/photo3-tablet@2x.jpg 2x" width="252" height="210">
+                  <img class="gallery__photo" src="img/gallery/photo3-mobile@1x.jpg" srcset="img/gallery/photo3-mobile@2x.jpg 2x" alt="Турист сверяется по компасу, находясь в горах" width="157" height="135">
+                </picture>
+              </li>
+
+              <li class="gallery__slide gallery__slide--long swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo4@1x.webp 1x, img/gallery/photo4@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo4-tablet@1x.webp 1x, img/gallery/photo4-tablet@2x.webp 2x" width="253" height="418">
+                  <source type="image/webp" srcset="img/gallery/photo4@1x.webp 1x, img/gallery/photo4@2x.webp 2x" width="158" height="266">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo4@1x.jpg 1x, img/gallery/photo4@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo4-tablet@1x.jpg 1x, img/gallery/photo4-tablet@2x.jpg 2x" width="253" height="418">
+                  <img class="gallery__photo" src="img/gallery/photo4@1x.jpg" srcset="img/gallery/photo4@2x.jpg 2x" alt="Туристы идут вдоль канатной дороги" width="158" height="266">
+                </picture>
+              </li>
+
+              <li class="gallery__slide gallery__slide--group swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo5@1x.webp 1x, img/gallery/photo5@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo5@1x.webp 1x, img/gallery/photo5@2x.webp 2x" width="252" height="210">
+                  <source type="image/webp" srcset="img/gallery/photo5@1x.webp 1x, img/gallery/photo5@2x.webp 2x" width="157" height="135">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo5@1x.jpg 1x, img/gallery/photo5@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo5@1x.jpg 1x, img/gallery/photo5@2x.jpg 2x" width="252" height="210">
+                  <img class="gallery__photo" src="img/gallery/photo5@1x.jpg" srcset="img/gallery/photo5@2x.jpg 2x" alt="Группа туристов движется вдоль замерзшего ручья" width="157" height="135">
+                </picture>
+
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo6@1x.webp 1x, img/gallery/photo6@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo6@1x.webp 1x, img/gallery/photo6@2x.webp 2x" width="252" height="210">
+                  <source type="image/webp" srcset="img/gallery/photo6@1x.webp 1x, img/gallery/photo6@2x.webp 2x" width="157" height="135">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo6@1x.jpg 1x, img/gallery/photo6@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo6@1x.jpg 1x, img/gallery/photo6@2x.jpg 2x" width="252" height="210">
+                  <img class="gallery__photo" src="img/gallery/photo6@1x.jpg" srcset="img/gallery/photo6@2x.jpg 2x" alt="Палатка на фоне ночного звездного неба" width="157" height="135">
+                </picture>
+              </li>
+
+              <li class="gallery__slide gallery__slide--long swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/photo7@1x.webp 1x, img/gallery/photo7@2x.webp 2x" width="284" height="643">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo7@1x.webp 1x, img/gallery/photo7@2x.webp 2x" width="253" height="418">
+                  <source type="image/webp" srcset="img/gallery/photo7@1x.webp 1x, img/gallery/photo7@2x.webp 2x" width="158" height="266">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/photo7@1x.jpg 1x, img/gallery/photo7@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/photo7@1x.jpg 1x, img/gallery/photo7@2x.jpg 2x" width="253" height="418">
+                  <img class="gallery__photo" src="img/gallery/photo7@1x.jpg" srcset="img/gallery/photo7@2x.jpg 2x" alt="Туристы развели костер у озера для завтрака" width="158" height="266">
+                </picture>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="form" data-test="form">
+        <div class="form__container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
+          <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__label">
+              <span class="form__text form__phone">Телефон</span>
+              <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required>
+            </label>
+            <label class="form__label">
+              <span class="form__text form__email">Email</span>
+              <input class="form__input" type="text" name="email" id="email" placeholder="Email" required>
+            </label>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <div data-test="footer">footer</div>
