@@ -4,17 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Туры по захватывающим местам России">
     <title>Lifetour</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicons/32.png">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/Montserrat-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/Montserrat-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
 
     <header class="header" data-test="header">
       <div class="header__container">
@@ -46,19 +51,19 @@
             </li>
 
             <li class="header__item">
-              <a class="header__link" href="#">О нас</a>
+              <a class="header__link" href="#about">О нас</a>
             </li>
 
             <li class="header__item">
-              <a class="header__link" href="#">Отзывы</a>
+              <a class="header__link" href="#reviews">Отзывы</a>
             </li>
 
             <li class="header__item">
-              <a class="header__link" href="#">Фотографии</a>
+              <a class="header__link" href="#gallery">Фотографии</a>
             </li>
 
             <li class="header__item">
-              <a class="header__link" href="#">Контакты</a>
+              <a class="header__link" href="#footer">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -378,7 +383,7 @@
         </div>
       </section>
 
-      <section class="about" data-test="about">
+      <section class="about" id="about" data-test="about">
         <div class="about__container">
           <h2>О нас</h2>
           <ul class="about__list">
@@ -395,7 +400,7 @@
       </section>
 
 
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" id="reviews" data-test="reviews">
         <div class="reviews__container">
 
           <h2 class="reviews__title  title-shadow">Отзывы</h2>
@@ -487,7 +492,7 @@
         </div>
       </section>
 
-      <section class="adv" data-test="adv">
+      <section class="adv" id="adv" data-test="adv">
         <div class="adv__container">
           <h2 class="adv__title title-shadow">Преимущества</h2>
           <div class="adv__swiper swiper">
@@ -550,7 +555,7 @@
       </section>
 
 
-      <section class="gallery" data-test="gallery">
+      <section class="gallery" id="gallery" data-test="gallery">
         <div class="gallery__container">
           <div class="gallery__content">
             <h2 class="gallery__title title-shadow">Фотогалерея</h2>
@@ -647,7 +652,7 @@
         </div>
       </section>
 
-      <section class="form" data-test="form">
+      <section class="form" id="form" data-test="form">
         <div class="form__container">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
@@ -666,7 +671,7 @@
       </section>
     </main>
 
-    <footer class="footer" data-test="footer">
+    <footer class="footer" id="footer" data-test="footer">
       <div class="footer__container">
 
         <div class="footer__contacts-wrapper">
@@ -712,22 +717,22 @@
 
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Туры</a>
+              <a class="footer__item-link" href="#tours">Туры</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Обучение</a>
+              <a class="footer__item-link" href="#training">Обучение</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">О нас</a>
+              <a class="footer__item-link" href="#about">О нас</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Отзывы</a>
+              <a class="footer__item-link" href="#reviews">Отзывы</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Фотографии</a>
+              <a class="footer__item-link" href="#gallery">Фотографии</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Контакты</a>
+              <a class="footer__item-link" href="#footer">Контакты</a>
             </li>
           </ul>
 

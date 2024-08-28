@@ -24,6 +24,11 @@
   text-align: center;
   color: $primary;
 
+  &::before {
+    left: 50%;
+    translate: -50% 0;
+  }
+
   @media ($tablet) {
     margin-bottom: 60px;
     font-size: 25px;
