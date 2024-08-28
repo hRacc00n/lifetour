@@ -666,7 +666,97 @@
       </section>
     </main>
 
-    <div data-test="footer">footer</div>
+    <footer class="footer" data-test="footer">
+      <div class="footer__container">
+
+        <div class="footer__contacts-wrapper">
+          <div class="footer__content">
+            <h2 class="footer__title title-shadow">Контакты</h2>
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+
+            <ul class="footer__contacts">
+              <li class="footer__contact footer__contact--phone">
+                <h3 class="footer__contact-title">Телефон</h3>
+                <a class="footer__contact-link" href="tel:89837454545">+7 983 745-45-45</a>
+              </li>
+
+              <li class="footer__contact footer__contact--mail">
+                <h3 class="footer__contact-title">Email</h3>
+                <a class="footer__contact-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+
+              <li class="footer__contact footer__contact--address">
+                <h3 class="footer__contact-title">Адрес</h3>
+                <a class="footer__contact-link" href="https://yandex.ru/maps/213/moscow/house/prospekt_mira_14s1/Z04YcARiT0MDQFtvfXt2dXRgYg==/?ll=37.632664%2C55.774836&z=17.11">г. Москва, пр-т Мира,<br> д. 14, офис 101</a>
+              </li>
+            </ul>
+          </div>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/footer/map-desktop@1x.webp 1x, img/footer/map-desktop@2x.webp 2x" width="600" height="324">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/footer/map-tablet@1x.webp 1x, img/footer/map-tablet@2x.webp 2x" width="768" height="340">
+            <source type="image/webp" srcset="img/footer/map-mobile@1x.webp 1x, img/footer/map-mobile@2x.webp 2x" width="320" height="343">
+            <source type="image/png" media="(min-width: 1440px)" srcset="img/footer/map-desktop@1x.png 1x, img/footer/map-desktop@2x.png 2x" width="600" height="324">
+            <source type="image/png" media="(min-width: 768px)" srcset="img/footer/map-tablet@1x.png 1x, img/footer/map-tablet@2x.png 2x" width="768" height="340">
+            <img class="footer__map" src="img/footer/map-mobile@1x.png" srcset="img/footer/map-mobil@2x.png 2x" alt="Карта: г. Москва, пр-т Мира, д. 14, офис 101" width="320" height="343">
+          </picture>
+        </div>
+
+        <div class="footer__info">
+          <a class="footer__logo" href="#">
+            <span class="visually-hidden">Логотип сайта LifeTour</span>
+            <svg width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">Туры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">Обучение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">Фотографии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="footer__telephone" href="tel:88007253232">8 800 725-32-32</a>
+
+          <ul class="footer__socials">
+            <li class="footer__social">
+              <a class="footer__social-link footer__social-link--vk" href="#">
+                <span class="visually-hidden">Перейти вКонтакте</span>
+              </a>
+            </li>
+            <li class="footer__social">
+              <a class="footer__social-link footer__social-link--odnoklassniki" href="#">
+                <span class="visually-hidden">Перейти в Одноклассники</span>
+              </a>
+            </li>
+            <li class="footer__social">
+              <a class="footer__social-link footer__social-link--reddit" href="#">
+                <span class="visually-hidden">Перейти в Реддит</span>
+              </a>
+            </li>
+          </ul>
+
+          <a class="footer__policy" href="#">Политика конфиденциальности</a>
+        </div>
+
+      </div>
+    </footer>
+
     <script type="module" src="js/main.js"></script>
   </body>
 
